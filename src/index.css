@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+body {
+  margin: 0;
+  font-family: "Roboto";
+}
+
+.App {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  background-color: #f5f5f5; /* Gris claro para un aspecto más formal */
+}
+
+.carousel {
+  overflow: hidden;
+  width: 700px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.inner {
+  white-space: nowrap;
+  transition: transform 0.3s;
+}
+
+.carousel-item {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 490px;
+  background-color: #ffffff; /* Blanco para un aspecto limpio */
+  border-radius: 20px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* Sombras más pronunciadas */
+  border: 2px solid #e0e0e0; /* Borde más definido */
+}
+
+.carousel-item-text {
+  font-size: 1.15rem;
+  margin: 40px 0 40px 0;
+  padding: 0 20px 0 20px;
+  white-space: normal;
+  color: #333333; /* Texto negro para mejor legibilidad */
+}
+
+.carousel-img {
+  width: 250px;
+  padding: 0 20px 0 20px;
+}
+
+/* Final stage */
+
+.carousel-buttons {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.button-arrow {
+  background: #333333; /* Gris oscuro para un botón más formal */
+  border: 2px solid #333333;
+  border-radius: 50%;
+  cursor: pointer;
+  margin-top: 20px;
+  color: #ffffff; /* Texto blanco para contrastar */
+  padding: 10px;
+  transition: background-color 0.3s, border-color 0.3s, color 0.3s;
+}
+
+.button-arrow:hover {
+  background: #ffffff; /* Blanco al pasar el mouse */
+  color: #333333;
+}
+
+.indicators {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.indicator-buttons {
+  border: none;
+  cursor: pointer;
+}
+
+.indicators > button {
+  margin: 5px;
+  background: none;
+}
+
+.indicator-symbol {
+  color: #333333;
+}
+
+.indicator-symbol-active {
+  color: #bbb9b9;
+}
